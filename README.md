@@ -104,9 +104,9 @@ loop:
     print "Invalid choice."
 ```
 
-## Flowchart
-
-
+## Flowchart (HEADS-UP THIS WILL NOT WORK ON FLOWGORITHIM AS THIS IS MERELY A MEANS TO SHOW THE LOGIC)
+flowchart TD
+   
 ## GitHub Repository Link
 [Project Repository](https://github.com/ktdiamante2031-tech/Project_Template_ComputerScience2)
 
