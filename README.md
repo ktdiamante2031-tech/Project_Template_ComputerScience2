@@ -11,9 +11,9 @@ We aim to address the issue of reckless spending among students. Many students s
 ## Features
 * **Feature 1:** Calculate the recommended daily expense limit for the week.
 * **Feature 2:** Provide a daily expense recommendation adjusted for a specific savings goal.
-* **Feature 3:** *[Add feature description here]*
-* **Feature 4:** *[Add feature description here]*
-* **Feature 5:** *[Add feature description here]*
+* **Feature 3:** Welcoming a returnee user.
+* **Feature 4:** Logging a new expense and categorizing it
+* **Feature 5:** 
 
 ## Planned Inputs and Outputs
 
