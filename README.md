@@ -1,43 +1,48 @@
 # Student Expense Tracker
 
-# Problem Statement
-We would like to solve students wasting money recklessly.
+## Problem Statement
+We aim to address the issue of reckless spending among students. Many students spend their allowances impulsively on non-essential items (such as Labubus) without careful financial planning or budgeting.
 
-People, especially students use their money recklessly on things like labubus without thinking about their money carefully.
+## Project Objectives
+* **Objective 1:** Analyze and summarize financial data from a chosen JSON dataset.
+* **Objective 2:** Help users gain meaningful insights into their spending habits (e.g., averages, trends, and patterns).
+* **Objective 3:** Practice JSON data handling and core Python programming concepts.
 
-# Project Objectives
+## Features
+* **Feature 1:** Calculate the recommended daily expense limit for the week.
+* **Feature 2:** Provide a daily expense recommendation adjusted for a specific savings goal.
+* **Feature 3:** *[Add feature description here]*
+* **Feature 4:** *[Add feature description here]*
+* **Feature 5:** *[Add feature description here]*
 
-Objective 1: To analyze and summarize data from the chosen JSON dataset.
-Objective 2: To help users gain meaningful insights (e.g., averages, trends, patterns).
-Objective 3: To practice JSON handling and Python programming concepts.
+## Planned Inputs and Outputs
 
-# Features
-Feature 1: Calculating daily recommended expense for the week.
-Feature 2: Daily expense recommendation for saving a set amount of cash.
-Feature 3: 
-Feature 4: (Your own idea)
-Feature 5: (Your own idea)
-(You may add more features if you like.)
+### Inputs
+* User's name
+* Total available cash/allowance
+* Current expenses and target savings amount
 
-# Planned Inputs and Outputs
-Inputs
+### Outputs
+* Recommended daily spending limit for the week
+* Adjusted daily spending limit while saving for a specific item or goal
 
-Their name, amount of cash and expenses
+## Logic Plan
+*[Describe your program's overall logic and flow here]*
 
-Outputs
+## Pseudocode
+*Write your steps in plain English below (replace the example with your actual program steps):*
 
-Amount of money they can spend per day, how much they can spend while saving for an item they are interested in.
+```text
+Load JSON file
+Display menu of features
+If user chooses "1", compute average grade per student
+If user chooses "2", list all borrowed books
+Repeat until user exits program
+```
 
-#Logic Plan
-Describe your program’s logic:
+## Flowchart
+*[Attach or embed your flowchart image here using `![Flowchart](link-to-your-image.png)`]*
 
-# Pseudocode
-Write your steps in plain English. Example:
-Load JSON file Display menu of features If user chooses "1", compute average grade per student If user chooses "2", list all borrowed books Repeat until user exits program
+## GitHub Repository Link
+[Project Repository](https://github.com/ktdiamante2031-tech/Project_Template_ComputerScience2)
 
-# Flowchart
-Attach or draw a flowchart showing how the program will work.
-
-# GitHub Repository Link
-Paste your GitHub repository link here:
-https://github.com/ktdiamante2031-tech/Project_Template_ComputerScience2
