@@ -13,7 +13,7 @@ We aim to address the issue of reckless spending among students. Many students s
 * **Feature 2:** Provide a daily expense recommendation adjusted for a specific savings goal.
 * **Feature 3:** Welcoming a returnee user.
 * **Feature 4:** Logging a new expense and categorizing it
-* **Feature 5:** 
+* **Feature 5:** Summary/Save Calculator
 
 ## Planned Inputs and Outputs
 
@@ -27,10 +27,10 @@ We aim to address the issue of reckless spending among students. Many students s
 * Adjusted daily spending limit while saving for a specific item or goal
 
 ## Logic Plan
-*[Describe your program's overall logic and flow here]*
+
 
 ## Pseudocode
-*Write your steps in plain English below (replace the example with your actual program steps):*
+
 
 ```text
 Load JSON file
