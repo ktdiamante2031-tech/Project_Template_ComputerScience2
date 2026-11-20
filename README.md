@@ -106,6 +106,72 @@ loop:
 
 ## Flowchart (HEADS-UP THIS WILL NOT WORK ON FLOWGORITHIM AS THIS IS MERELY A MEANS TO SHOW THE LOGIC)
 flowchart TD
+
+```mermaid
+flowchart TD
+    Start([Start]) --> LoadJSON[Load JSON data in Python]
+    LoadJSON --> InputName[Input name]
+    InputName --> CheckReturnee{IsReturnee = true?}
+    CheckReturnee -->|Yes| WelcomeBack[Output Welcome Back name]
+    CheckReturnee -->|No| WelcomeNew[Output Welcome name]
+    WelcomeBack --> LoopCond{condition = T?}
+    WelcomeNew --> LoopCond
+
+    LoopCond -->|No| End([End])
+    LoopCond -->|Yes| Menu[Display Choices 1 to 5]
+    Menu --> InputChoice[Input choice]
+
+    InputChoice --> C1{choice = 1?}
+    C1 -->|Yes| In1Cash[Input cash]
+    In1Cash --> In1Day[Input day]
+    In1Day --> D1{day > 0?}
+    D1 -->|Yes| CalcAE[ae = cash / day]
+    CalcAE --> OutAE[Output ae]
+    OutAE --> LoopCond
+    D1 -->|No| ErrD1[Output Days must be greater than 0]
+    ErrD1 --> LoopCond
+
+    C1 -->|No| C2{choice = 2?}
+    C2 -->|Yes| In2Cash[Input cash]
+    In2Cash --> In2Day[Input day]
+    In2Day --> D2{day > 0?}
+    D2 -->|Yes| In2Save[Input save]
+    In2Save --> S2{save > cash?}
+    S2 -->|Yes| ErrS2[Output Savings goal exceeds cash]
+    ErrS2 --> LoopCond
+    S2 -->|No| CalcSave[savecash = cash - save / day]
+    CalcSave --> OutSave[Output savecash]
+    OutSave --> LoopCond
+    D2 -->|No| ErrD2[Output Days must be greater than 0]
+    ErrD2 --> LoopCond
+
+    C2 -->|No| C3{choice = 3?}
+    C3 -->|Yes| In3Amt[Input amount]
+    In3Amt --> In3Cat[Input category]
+    In3Cat --> A3{amount > 0?}
+    A3 -->|Yes| AppendExp[Append amount and category to history]
+    AppendExp --> OutLogged[Output Expense Logged]
+    OutLogged --> LoopCond
+    A3 -->|No| ErrA3[Output Amount must be greater than 0]
+    ErrA3 --> LoopCond
+
+    C3 -->|No| C4{choice = 4?}
+    C4 -->|Yes| EmptyCheck{No past expenses?}
+    EmptyCheck -->|Yes| OutEmpty[Output No expenses logged yet]
+    OutEmpty --> LoopCond
+    EmptyCheck -->|No| CalcTotal[totalspent = sum of expenses]
+    CalcTotal --> OutTotal[Output totalspent]
+    OutTotal --> LoopExp[Output each expense category and amount]
+    LoopExp --> LoopCond
+
+    C4 -->|No| C5{choice = 5?}
+    C5 -->|Yes| SaveJSON[Save data to JSON file]
+    SaveJSON --> OutBye[Output goodbye]
+    OutBye --> SetExit[condition = Z]
+    SetExit --> LoopCond
+    C5 -->|No| OutInv[Output Invalid Choice]
+    OutInv --> LoopCond
+```
    
 ## GitHub Repository Link
 [Project Repository](https://github.com/ktdiamante2031-tech/Project_Template_ComputerScience2)
