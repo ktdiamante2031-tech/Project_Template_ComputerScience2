@@ -22,13 +22,13 @@ Feature 5: (Your own idea)
 ⌨️ Planned Inputs and Outputs
 Inputs
 
-What kind of data will the user provide (if any)?
-Example: student ID, date range, product name
+Their name, amount of cash and expenses
+
 Outputs
 
-What kind of results will your program display?
-Example: class averages, top products, weather summary
-🧠 Logic Plan
+Amount of money they can spend per day, how much they can spend while saving for an item they are interested in.
+
+Logic Plan
 Describe your program’s logic:
 
 Pseudocode
