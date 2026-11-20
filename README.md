@@ -107,6 +107,7 @@ loop:
 ## Flowchart (HEADS-UP THIS WILL NOT WORK ON FLOWGORITHIM AS THIS IS MERELY A MEANS TO SHOW THE LOGIC)
 flowchart TD
 
+<img width="6469" height="4425" alt="Project proposal - Main" src="https://github.com/user-attachments/assets/eb18e67b-3bb6-476a-92e3-b33ea1214dc5" />
 
    
 ## GitHub Repository Link
