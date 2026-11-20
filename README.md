@@ -33,15 +33,79 @@ We aim to address the issue of reckless spending among students. Many students s
 
 
 ```text
-Load JSON file
-Display menu of features
-If user chooses "1", compute average grade per student
-If user chooses "2", list all borrowed books
-Repeat until user exits program
+Load JSON data (initialize empty structure if file does not exist)
+
+input name
+normalized_name = lowercase(name)
+
+if normalized_name exists in JSON data:
+  load user profile and past expenses
+  print "Welcome back, " + name
+else:
+  create new profile for name
+  print "Welcome, " + name
+
+loop:
+  Display Choices
+    [1] Calculations for average expense for the whole week
+    [2] Calculations for daily recommended expense for saving
+    [3] Log a new expense
+    [4] View spending summary
+    [5] Save and Exit
+
+  input choice
+
+  if choice == 1:
+    input cash
+    input day
+    if day > 0:
+      a_e = cash / day
+      print a_e
+    else:
+      print "Days must be greater than 0."
+
+  elif choice == 2:
+    input cash
+    input day
+    if day > 0:
+      input save
+      if save > cash:
+        print "Savings goal cannot be greater than available cash."
+      else:
+        savecash = (cash - save) / day
+        print savecash
+    else:
+      print "Days must be greater than 0."
+
+  elif choice == 3:
+    input amount
+    input category
+    if amount > 0:
+      append (amount, category) to user's past expenses
+      print "Expense logged."
+    else:
+      print "Amount must be greater than 0."
+
+  elif choice == 4:
+    if user's past expenses is empty:
+      print "No expenses logged yet."
+    else:
+      total_spent = sum of amount in user's past expenses
+      print "Total spent: " + total_spent
+      for each expense in user's past expenses:
+        print expense.category + ": " + expense.amount
+
+  elif choice == 5:
+    save JSON data to file
+    print "Goodbye!"
+    break
+
+  else:
+    print "Invalid choice."
 ```
 
 ## Flowchart
-*[Attach or embed your flowchart image here using `![Flowchart](link-to-your-image.png)`]*
+
 
 ## GitHub Repository Link
 [Project Repository](https://github.com/ktdiamante2031-tech/Project_Template_ComputerScience2)
